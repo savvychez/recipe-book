@@ -1,0 +1,441 @@
+@import url("https://use.typekit.net/ios4uqn.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefff4;
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+
+  background-color: #ff8e42;
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.logo-icon  {
+  color: white;
+  font-family: freight-display-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75em;
+}
+
+.nav-item {
+  margin-right: 5vw;
+}
+
+.router-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+  font-size: 1.2em;
+  font-family: 'Work Sans';
+  font-weight: 400;
+}
+
+.router-link:hover {
+  text-decoration: underline;
+}
+
+.no-hover {
+  font-size: 0.85em;
+}
+
+.no-hover:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  
+  .logo-icon {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: block;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    margin-right: 0;
+    margin-top: 5px;
+  }
+}
+
+/* Article Viewer */
+
+.title {
+  margin: 2.5% 5%;
+
+  font-size: 5em;
+  font-family:  freight-display-pro, 'Work Sans';
+  font-weight: 500;
+
+  color: #9e4c08;
+}
+
+.art-title {
+  margin: 2.5% 5%;
+
+  font-size: 5em;
+  font-family:  freight-display-pro, 'Work Sans';
+  font-weight: 500;
+
+  color: #9e4c08;
+
+  margin: 2.5% 5% 0 5%;
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+
+  font-size: 1.5em;
+  font-family: 'Work Sans';
+  font-weight: 400;
+
+  color: #948a4f;
+}
+
+.article {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.article-para {
+  margin: 1.5% 0;
+  font-size: 1.5em;
+  font-family: 'Work Sans';
+  color: #5a1c03;
+}
+
+.article-content {
+  display: block;
+  margin: 50px auto;
+
+  width: 50%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1480px) {
+  .article {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .art-title {
+    margin: 10px;
+    font-size: 3em;
+  }
+
+  .article {
+    width: 85%;
+  }
+  
+  .article-para {
+    margin: 5% 0;
+  }
+
+  .article-content {
+    width: 85%;
+    margin: 25px auto;
+  }
+}
+
+/* Recipe feed */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px  ;
+}
+
+.cooking {
+  width: 220px;
+  margin: 0 7.5%;
+}
+
+.card-router {
+  text-decoration: none;
+}
+
+.card {
+  margin: 1% 5%;
+  padding: 2%;
+
+  background-color: rgba(250, 250, 250, 0.3);
+  border: 1.5px solid #D8DFE8;
+  border-radius: 20px;
+
+  width: 87.5%;
+  transition: 0.25s;
+
+}
+
+.card:hover {
+  border: 1.5px solid #6b3204;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.card > h2 {
+  font-family: 'Work Sans';
+  font-weight: 400;
+  font-size: 2.75em;
+
+  color: #bb5400;
+}
+
+.card > h3 {
+  font-family: 'Work Sans';
+  font-weight: 400;
+  font-size: 1.1em;
+
+  color: #B5B6B6;
+}
+
+@media screen and (max-width: 450px) {
+  .top {
+    display: block;
+  }
+
+  .title {
+    text-align: center;
+    margin: 15px;
+    font-size: 4em;
+  }
+
+  .cooking {
+    display: block;
+    margin: 15px auto;
+    width: 45%;
+  }
+
+  .card {
+    padding: 5%;
+  }
+
+  .card > h2 {
+    font-size: 2em;
+  }
+
+}
+
+/* Composer */
+
+.writer-block {
+  margin: 2.5% 5% 0 5%;
+}
+
+.writer-block > * {
+  display: block;
+  margin: 10px auto;
+  width: 800px;
+}
+
+input {
+  margin: 0;
+  padding: 0px;
+  border: 0;
+
+  color: #0052BB;
+
+  background: none;
+  outline: none;
+
+  background: transparent;
+  border-bottom: 2px solid #C5C5C5;
+  border-spacing: 10px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  line-height: 1.75em;
+
+  transition: 0.25s;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  color: #afafaf;
+
+  transition: 0.25s;
+}
+
+.writer-block:focus-within > label {
+  color: #04316b;
+}
+
+.writer-block:focus-within > input, .writer-block:focus-within > textarea {
+  border-color: #04316b;
+  color: #0052BB;
+}
+
+.text-area {
+  margin: 0 auto;
+  padding: 20px;
+  border: 0;
+
+  color: #0052BB;
+
+  background: none;
+  outline: none;
+
+  background: transparent;
+  border: 2px solid #C5C5C5;
+  border-radius: 10px;
+  border-spacing: 10px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+
+  transition: 0.25s;
+  resize: none;
+
+}
+
+.img-block > div {
+  padding: 30px;
+  border: 2px solid #C5C5C5;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-block > div {
+  transition: 0.25s;
+}
+
+.img-block > div:focus-within{
+  border-color: #04316b;
+  color: #04316b; 
+}
+
+.chooseFileButton {
+  font-family: 'Work Sans';
+}
+
+.chooseFileButton:hover {
+  background : #08499e !important; 
+}
+
+.deleteImage {
+  background-color: #08499e !important;
+  font-family: sans-serif;
+  font-weight: 400 !important;
+  font-size: 0.75em !important;
+}
+
+.uploadPictureContainer {
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.add_item_link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+
+  color: #0052BB;
+  text-decoration: none;
+  font-size: 1.1em;
+
+  cursor: pointer;
+
+  user-select: none; 
+}
+
+.add_item_link:hover {
+
+  color: #0063e6;
+  text-decoration: none;
+}
+
+.selector {
+  margin: 20px auto;
+  transition: 0.5s;
+  transition:transform 0.3s ease-out;
+  height:auto;
+  transform:scaleY(1); 
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+
+  text-decoration: none;
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+
+  color: #FFF;
+  background-color: #0052BB;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #0052BB;
+  border-radius: 20px;
+
+  width: 150px;
+  transition: 0.25s;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:visited:hover {
+  transition: .25s;
+  color: #FFF;
+  background-color: #0063e6;
+  border-color: #0063e6;
+}
+
+.button:active,
+.button:visited:active {
+  transition: .25s;
+  color: #FFF;
+  background-color: #005cd4;
+  border-color: #005cd4;
+}
+
+.spacer {
+  margin-top: 50px;
+}
+
+*:focus{ outline: none; }
+
+@media screen and (max-width: 850px) {
+  .composer-title {
+    font-size: 3em;
+  }
+
+  .writer-block > * {
+    width: 90%;
+  }
+
+  .writer-block {
+    margin-bottom: 20px;
+  }
+}
